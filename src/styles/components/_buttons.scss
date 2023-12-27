@@ -1,0 +1,23 @@
+@use '../variables';
+
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &--primary{
+        color: variables.$textColor;
+        background-color: variables.$bgButton;
+    }
+
+    @media(max-width: 640px){
+        display: block;
+        width: 100%;
+    }
+}
